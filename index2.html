@@ -1,0 +1,134 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies India & Group</title>
+
+    <script src="https://kit.fontawesome.com/936db3fccf.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style2.css">
+    <link rel="icon" href="images/favicon-32x32.png">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- START PRELOADER  -->
+
+    <div id="preloader"></div>
+
+    <!-- END PRELOADER  -->
+
+    <header>
+        <i class="fa fa-bars" arial-hidden="true " id="menu"></i>
+        <section id="sidenav">
+            <ul>
+                <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
+                <li><a href="#testimonials"><i class="fa fa-picture-o"></i> Service</a></li>
+                <li><a href="https://maps.app.goo.gl/MNxT95wEZuhz1vjy6" target="_blank"><i class=" fa-sharp
+                        fa-solid fa-location-dot"></i> Location</a></li>
+                <li><a href="https://wa.me/919128072438?text=Got reference from your Digital vCard. Want to know more details."
+                        target=""><i class="fa fa-whatsapp"></i> Contact Us </a></li>
+
+            </ul>
+        </section>
+    </header>
+
+    <div class="content">
+        <h1>WEDDING TALES </h1>
+        
+        <p>India's finest wedding photography and film making company. Capturing the moments across the globe, Chocolate Box Photography is premium destination wedding photography company, with team of passioante and enthusiasts. Covering different cultures and religions, our team has travelled such as various cities like Bangalore, 	Hyderabad, Mumbai, etc and various such destinations.</p>
+    </div>
+
+    <div class="full-img" id="fullImgBox">
+        <img src="https://www.dreamingloud.com/wp-content/uploads/2019/03/Talambralu-telugu-wedding-ritual.jpg"
+            id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="img-gallery">
+        <img src="https://www.dreamingloud.com/wp-content/uploads/2019/03/Talambralu-telugu-wedding-ritual.jpg"
+            onclick="openFullImg(this.src)">
+        <img src="https://i.pinimg.com/originals/08/2c/56/082c5653d7a4feaa20ff232a36517cf2.jpg"
+            onclick="openFullImg(this.src)">
+
+
+        <img src="https://th.bing.com/th/id/OIP.Cejjs0dQyJvDuATQ2clH2AHaE8?pid=ImgDet&rs=1"
+            onclick="openFullImg(this.src)">
+
+
+        <img src="https://th.bing.com/th/id/OIP.rh4CNrOR0Q-40Hf4yL-GhwHaE8?w=280&h=187&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+            onclick="openFullImg(this.src)">
+        <img src="https://th.bing.com/th/id/OIP.pm6PBgtlVPuKR6SfW73oWwHaFP?w=272&h=192&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+            onclick="openFullImg(this.src)">
+        <img src="https://th.bing.com/th/id/OIP.gnhlmuBCuCS6XnloueEZfAHaE8?w=280&h=187&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+            onclick="openFullImg(this.src)">
+
+        <img src="https://th.bing.com/th/id/OIP.EpwOriFa-8oCcXlFOLCYqQAAAA?pid=ImgDet&w=207&h=138&c=7&dpr=1.3"
+            onclick="openFullImg(this.src)">
+        <img src="https://th.bing.com/th/id/OIP.dfDCxJZqr1FwOXktcqpjjwHaE6?w=294&h=195&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+            onclick="openFullImg(this.src)">
+        <img src="https://th.bing.com/th/id/OIP.1gNmcZI9A0MwkcIceaqOAgHaE8?w=263&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+            onclick="openFullImg(this.src)">
+        <img src="https://chocolateboxphotography.com/img/blogs/sruti-vishranth/5.png" onclick="openFullImg(this.src)">
+        <img src="https://th.bing.com/th/id/OIP._V6wFoPJvVo8lMPngBEmWgHaFj?w=251&h=188&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+            onclick="openFullImg(this.src)">
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- START NAV MENU -->
+    <script>
+        var menu = document.getElementById("menu");
+        var sidenav = document.getElementById("sidenav");
+        sidenav.style.width = "0px";
+        menu.onclick = function () {
+            if (sidenav.style.width == "0px") {
+                sidenav.style.width = "250px";
+
+            }
+            else {
+                sidenav.style.width = "0px";
+
+            }
+
+        }
+    </script>
+    <!-- END NAV MENU -->
+
+
+
+    <script>
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullImg = document.getElementById("fullImg");
+
+        function openFullImg(pic) {
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic;
+        }
+        function closeFullImg() {
+            fullImgBox.style.display = "none";
+
+        }
+
+    </script>
+
+
+    <!-- START PRELOADER SECTION  -->
+    <script>
+        var loader = document.getElementById("preloader");
+
+        window.addEventListener("load", function () {
+            loader.style.display = "none";
+        })
+    </script>
+    <!-- END PRELOADER SECTION  -->
+</body>
+
+</html>
